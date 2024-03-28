@@ -1,0 +1,128 @@
+@font-face {
+    font-family:Regular;
+    src: url('../fonts/Bloom-Regular.otf');
+}
+
+@font-face {
+    font-family:Karyna Manukian;
+    src: url('../fonts/Calypso.ttf');
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F8C9D1;
+    /*color: #564A4A;*/
+    /*background: linear-gradient(to bottom, #F8C9D1, #CCF5AC);*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family:Karyna Manukian;
+    color: #080305;
+    width: 50%;
+    height: 100%;
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.top-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    align-items:flex-end;
+}
+
+.profile-pic-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: right;
+    margin-top: 90px;
+    margin-right: 20px;
+}
+
+.profile-picture {
+    width: 100%;
+    height: auto;
+}
+
+.project-pictures {
+    width: 75%;
+    height: auto;
+}
+
+section {
+    font-family: Karyna Manukian;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 20px;
+    padding-top: 65px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.about-container {
+    font-family: Karyna Manukian;
+    font-size: 20px;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+}
+
+/*
+.description-container {
+    display:flex;
+    flex-wrap:wrap; 
+    justify-content: space-between;
+    padding:15px;
+}
+
+.description-category {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+}
+*/
+
+.description-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* splitting columns */
+    gap: 20px; 
+    padding: 15px;
+    width: 100%
+}
+
+.description-category {
+    width: 100%; 
+}
+
+
+.button-container {
+    padding:20px;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.custom-button,
+.custom-button:visited {
+      display: inline-block;
+      font-family: Regular;
+      background-color:#F8C9D1;
+      color: #48392A;
+      font-size: 32px;
+      padding: 5px 10px;
+}
+
+.custom-button:hover {
+      background: #6F4E37;
+      color: #3c281a;
+}
